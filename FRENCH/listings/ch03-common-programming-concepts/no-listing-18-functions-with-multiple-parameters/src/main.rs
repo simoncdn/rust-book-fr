@@ -1,7 +1,7 @@
 fn main() {
-    afficher_mesure_avec_unite(5, 'h');
+    print_labeled_measurement(5, 'h');
 }
 
-fn afficher_mesure_avec_unite(valeur: i32, unite: char) {
-    println!("La mesure est : {}{}", valeur, unite);
+fn print_labeled_measurement(value: i32, unit_label: char) {
+    println!("La mesure est : {}{}", value, unit_label);
 }

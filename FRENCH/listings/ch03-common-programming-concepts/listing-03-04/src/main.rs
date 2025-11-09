@@ -1,10 +1,10 @@
 fn main() {
     let a = [10, 20, 30, 40, 50];
-    let mut indice = 0;
+    let mut index = 0;
 
-    while indice < 5 {
-        println!("La valeur est : {}", a[indice]);
+    while index < 5 {
+        println!("La valeur est : {}", a[index]);
 
-        indice += 1;
+        index += 1;
     }
 }

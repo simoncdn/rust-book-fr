@@ -1,7 +1,7 @@
 fn main() {
-    let nombre = 3;
+    let number = 3;
 
-    if nombre < 5 {
+    if number < 5 {
         println!("La condition est vérifiée");
     } else {
         println!("La condition n'est pas vérifiée");
