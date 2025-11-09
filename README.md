@@ -2,17 +2,17 @@
 >
 > **🌐 This is the french translation of the book "The Rust Programming Language"**
 >
-> [👓 Click here to read this translated book online](https://jimskapt.github.io/rust-book-fr/)
+> [👓 Click here to read this translated book online](https://simoncdn.github.io/rust-book-fr/)
 >
 > *[🔗 Click here to go to the English Book repository](https://github.com/rust-lang/book)*
 >
-> Translations are inside [`/FRENCH/`](https://github.com/Jimskapt/rust-book-fr/tree/french-release/FRENCH)
+> Translations are inside [`/FRENCH/`](https://github.com/simoncdn/rust-book-fr/tree/french-release/FRENCH)
 > folder. Everything else should be remaining as the English Book *(except some
 > necessary files, like this README.md)*.
 >
 > Want to help to translate ?
 > Please read the file
-> [/FRENCH/CONTRIBUTING.md](https://github.com/Jimskapt/rust-book-fr/blob/french-release/FRENCH/CONTRIBUTING.md) !
+> [/FRENCH/CONTRIBUTING.md](https://github.com/simoncdn/rust-book-fr/blob/french-release/FRENCH/CONTRIBUTING.md) !
 
 # The Rust Programming Language
 
