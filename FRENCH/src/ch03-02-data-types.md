@@ -42,7 +42,7 @@ let guess: u32 = "42".parse().expect("Not a number!");
 -->
 
 ```rust
-let supposition: u32 = "42".parse().expect("Ce n'est pas un nombre !");
+let guess: u32 = "42".parse().expect("Ce n'est pas un nombre !");
 ```
 
 <!--
@@ -837,7 +837,7 @@ that is the value at index `[0]` in the array. The variable named `second` will
 get the value `2` from index `[1]` in the array.
 -->
 
-Dans cet exemple, la variable qui s'appelle `premier` aura la valeur `1`, car
+Dans cet exemple, la variable qui s'appelle `first` aura la valeur `1`, car
 c'est la valeur à l'indice `[0]` dans le tableau. La variable `second`
 récupèrera la valeur `2` depuis l'indice `[1]` du tableau.
 

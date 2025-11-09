@@ -3,23 +3,23 @@ use std::io;
 fn main() {
     let a = [1, 2, 3, 4, 5];
 
-    println!("Veuillez entrer un indice de tableau.");
+    println!("Veuillez entrer un index de tableau.");
 
-    let mut indice = String::new();
+    let mut index = String::new();
 
     io::stdin()
-        .read_line(&mut indice)
+        .read_line(&mut index)
         .expect("Échec de la lecture de l'entrée utilisateur");
 
-    let indice: usize = indice
+    let index: usize = index
         .trim()
         .parse()
-        .expect("L'indice entré n'est pas un nombre");
+        .expect("L'index entré n'est pas un nombre");
 
-    let element = a[indice];
+    let element = a[index];
 
     println!(
-        "La valeur de l'élément d'indice {} est : {}",
-        indice, element
+        "La valeur de l'élément d'index {} est : {}",
+        index, element
     );
 }
