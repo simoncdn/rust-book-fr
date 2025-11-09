@@ -1,6 +1,6 @@
 fn main() {
     // ANCHOR: here
-    let espaces = "   ";
-    let espaces = espaces.len();
+    let spaces = "   ";
+    let spaces = spaces.len();
     // ANCHOR_END: here
 }

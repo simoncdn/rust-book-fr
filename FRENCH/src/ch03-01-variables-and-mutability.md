@@ -263,7 +263,7 @@ const THREE_HOURS_IN_SECONDS: u32 = 60 * 60 * 3;
 -->
 
 ```rust
-const TROIS_HEURES_EN_SECONDES: u32 = 60 * 60 * 3;
+const THREE_HOURS_IN_SECONDS: u32 = 60 * 60 * 3;
 ```
 
 <!--
@@ -279,7 +279,7 @@ evaluation][const-eval] for more information on what operations can be used
 when declaring constants.
 -->
 
-Le nom de la constante est `TROIS_HEURES_EN_SECONDES` et sa valeur est définie
+Le nom de la constante est `THREE_HOURS_IN_SECONDS` et sa valeur est définie
 comme étant le résultat de la multiplication de 60 (le nombre de secondes dans
 une minute) par 60 (le nombre de minutes dans une heure) par 3 (le nombre
 d'heures que nous voulons calculer dans ce programme).
@@ -437,10 +437,10 @@ the simpler `spaces` name. However, if we try to use `mut` for this, as shown
 here, we’ll get a compile-time error:
 -->
 
-La première variable `espaces` est du type chaîne de caractères *(string)* et
-la seconde variable `espaces` est du type nombre. L'utilisation du masquage
-nous évite ainsi d'avoir à trouver des noms différents, comme `espaces_str` et
-`espaces_num` ; nous pouvons plutôt simplement réutiliser le nom `espaces`.
+La première variable `spaces` est du type chaîne de caractères *(string)* et
+la seconde variable `spaces` est du type nombre. L'utilisation du masquage
+nous évite ainsi d'avoir à trouver des noms différents, comme `spaces_str` et
+`spaces_num` ; nous pouvons plutôt simplement réutiliser le nom `spaces`.
 Cependant, si nous essayons d'utiliser `mut` pour faire ceci, comme ci-dessous,
 nous avons une erreur de compilation :
 
