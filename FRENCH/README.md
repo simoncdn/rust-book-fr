@@ -19,10 +19,10 @@ Please read [`/FRENCH/CONTRIBUTING.md`][].
 <!-- LINKS : -->
 
 [`/FRENCH/src/`]:
-https://github.com/Jimskapt/rust-book-fr/tree/french-release/FRENCH/src/
+https://github.com/simoncdn/rust-book-fr/tree/french-release/FRENCH/src/
 
 [`/FRENCH/listings/`]:
-https://github.com/Jimskapt/rust-book-fr/tree/french-release/FRENCH/listings/
+https://github.com/simoncdn/rust-book-fr/tree/french-release/FRENCH/listings/
 
 [`/FRENCH/CONTRIBUTING.md`]:
-https://github.com/Jimskapt/rust-book-fr/tree/french-release/FRENCH/CONTRIBUTING.md
+https://github.com/simoncdn/rust-book-fr/tree/french-release/FRENCH/CONTRIBUTING.md
