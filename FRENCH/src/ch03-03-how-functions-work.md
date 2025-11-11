@@ -63,9 +63,9 @@ defined somewhere.
 -->
 
 Nous pouvons appeler n'importe quelle fonction que nous avons définie en
-utilisant son nom, suivi d'une paire de parenthèses. Comme `une_autre_fonction`
+utilisant son nom, suivi d'une paire de parenthèses. Comme `another_function`
 est définie dans le programme, elle peut être appelée à l'intérieur de la
-fonction `main`. Remarquez que nous avons défini `une_autre_fonction` *après*
+fonction `main`. Remarquez que nous avons défini `another_function` *après*
 la fonction `main` dans le code source ; nous aurions aussi pu la définir avant.
 Rust ne se soucie pas de l'endroit où vous définissez vos fonctions, du moment
 qu'elles sont bien définies quelque part.
@@ -77,7 +77,7 @@ should see the following output:
 -->
 
 Créons un nouveau projet de binaire qui s'appellera *functions* afin d'en
-apprendre plus sur les fonctions. Ajoutez l'exemple `une_autre_fonction` dans le
+apprendre plus sur les fonctions. Ajoutez l'exemple `another_function` dans le
 *src/main.rs* et exécutez-le. Vous devriez avoir ceci :
 
 <!--
@@ -98,7 +98,7 @@ called and its message is printed.
 
 Les lignes s'exécutent dans l'ordre dans lequel elles apparaissent dans la
 fonction `main`. D'abord, le message `Hello, world!` est écrit, et ensuite
-`une_autre_fonction` est appelée et son message est affiché.
+`another_function` est appelée et son message est affiché.
 
 <!--
 ### Parameters
@@ -129,7 +129,7 @@ quand on appelle une fonction.
 In this version of `another_function` we add a parameter:
 -->
 
-Dans cette version de `une_autre_fonction`, nous ajoutons un paramètre :
+Dans cette version de `another_function`, nous ajoutons un paramètre :
 
 <!--
 <span class="filename">Filename: src/main.rs</span>
@@ -170,8 +170,8 @@ The declaration of `another_function` has one parameter named `x`. The type of
 string.
 -->
 
-La déclaration de `une_autre_fonction` a un paramètre nommé `x`. Le type de
-`x` a été déclaré comme `i32`. Quand nous passons `5` à `une_autre_fonction`, la
+La déclaration de `another_function` a un paramètre nommé `x`. Le type de
+`x` a été déclaré comme `i32`. Quand nous passons `5` à `another_function`, la
 macro `println!` place `5` là où la paire d'accolades `{}` a été placée dans la
 chaîne de formatage.
 
@@ -219,10 +219,10 @@ named `unit_label` and is type `char`. The function then prints text containing
 both the `value` and the `unit_label`.
 -->
 
-Cet exemple crée la fonction `afficher_mesure_avec_unite` qui a deux paramètres.
-Le premier paramètre s'appelle `valeur` et est un `i32`. Le second, `nom_unite`,
+Cet exemple crée la fonction `print_labeled_measurement` qui a deux paramètres.
+Le premier paramètre s'appelle `value` et est un `i32`. Le second, `unit_label`,
 est de type `char`. La fonction affiche ensuite le texte qui contient les
-valeurs de `valeur` et de `nom_unite`.
+valeurs de `value` et de `unit_label`.
 
 <!--
 Let’s try running this code. Replace the program currently in your *functions*
@@ -249,8 +249,8 @@ Because we called the function with `5` as the value for `value` and `'h'` as
 the value for `unit_label`, the program output contains those values.
 -->
 
-Comme nous avons appelé la fonction avec la valeur `5` pour `valeur` et `'h'`
-pour `nom_unite`, la sortie de ce programme contient ces valeurs.
+Comme nous avons appelé la fonction avec la valeur `5` pour `value` et `'h'`
+pour `unit_label`, la sortie de ce programme contient ces valeurs.
 
 <!--
 ### Statements and Expressions
@@ -509,7 +509,7 @@ running this code; the output should look like this:
 -->
 
 Il n'y a pas d'appel de fonction, de macro, ni même d'instruction `let` dans la
-fonction `cinq` — uniquement le nombre `5` tout seul. C'est une fonction
+fonction `five` — uniquement le nombre `5` tout seul. C'est une fonction
 parfaitement valide avec Rust. Remarquez que le type de retour de la fonction a
 été précisé aussi, avec `-> i32`. Essayez d'exécuter ce code ; le résultat
 devrait ressembler à ceci :
@@ -532,11 +532,11 @@ function to initialize a variable. Because the function `five` returns a `5`,
 that line is the same as the following:
 -->
 
-Le `5` dans `cinq` est la valeur de retour de la fonction, ce qui explique le
+Le `5` dans `five` est la valeur de retour de la fonction, ce qui explique le
 type de retour de `i32`. Regardons cela plus en détail. Il y a deux éléments
-importants : premièrement, la ligne `let x = cinq();` dit que nous utilisons
+importants : premièrement, la ligne `let x = five();` dit que nous utilisons
 la valeur de retour de la fonction pour initialiser la variable. Comme la
-fonction `cinq` retourne un `5`, cette ligne revient à faire ceci :
+fonction `five` retourne un `5`, cette ligne revient à faire ceci :
 
 <!--
 ```rust
@@ -554,7 +554,7 @@ return value, but the body of the function is a lonely `5` with no semicolon
 because it’s an expression whose value we want to return.
 -->
 
-Deuxièmement, la fonction `cinq` n'a pas de paramètre et déclare le type de
+Deuxièmement, la fonction `five` n'a pas de paramètre et déclare le type de
 valeur de retour, mais le corps de la fonction est un simple `5` sans
 point-virgule car c'est une expression dont nous voulons retourner la valeur.
 
@@ -633,7 +633,7 @@ would fix the error.
 -->
 
 Le message d'erreur principal, “mismatched types” *(types inadéquats)* donne le
-cœur du problème de ce code. La définition de la fonction `plus_un` dit qu'elle
+cœur du problème de ce code. La définition de la fonction `plus_one` dit qu'elle
 va retourner un `i32`, mais les instructions ne retournent pas de valeur, ceci
 est donc représenté par `()`, le type unité. Par conséquent, rien n'est
 retourné, ce qui contredit la définition de la fonction et provoque une erreur.

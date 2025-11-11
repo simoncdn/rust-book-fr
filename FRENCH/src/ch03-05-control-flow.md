@@ -70,7 +70,7 @@ ignore -- > section of Chapter 2.
 -->
 
 Une expression `if` commence par le mot-clé `if`, suivi d'une condition.
-Dans notre cas, la condition vérifie si oui ou non la variable `nombre` a une
+Dans notre cas, la condition vérifie si oui ou non la variable `number` a une
 valeur inférieure à 5. Nous ajoutons le bloc de code à exécuter si la condition
 est vérifiée immédiatement après la condition entre des accolades. Les blocs de
 code associés à une condition dans une expression `if` sont parfois appelés des
@@ -115,7 +115,7 @@ Let’s try changing the value of `number` to a value that makes the condition
 `false` to see what happens:
 -->
 
-Essayons de changer la valeur de `nombre` pour une valeur qui rend la condition
+Essayons de changer la valeur de `number` pour une valeur qui rend la condition
 non vérifiée pour voir ce qui se passe :
 
 <!--
@@ -427,9 +427,9 @@ if it had to keep track of multiple hypothetical types for any variable.
 L'expression dans le bloc `if` donne un entier, et l'expression dans le bloc
 `else` donne une chaîne de caractères. Ceci ne fonctionne pas car les variables
 doivent avoir un seul type, et Rust a besoin de savoir de quel type est la
-variable `nombre` au moment de la compilation. Savoir le type de `nombre`
+variable `number` au moment de la compilation. Savoir le type de `nombre`
 permet au compilateur de vérifier que le type est valable n'importe où nous
-utilisons `nombre`. Rust ne serait pas capable de faire cela si le type de
+utilisons `number`. Rust ne serait pas capable de faire cela si le type de
 `nombre` était déterminé uniquement à l'exécution ; car le compilateur
 deviendrait plus complexe et nous donnerait moins de garanties sur le code s'il
 devait prendre en compte tous les types hypothétiques pour une variable.
@@ -794,7 +794,7 @@ in the array:
 -->
 
 Ici, le code parcourt le tableau élément par élément.
-Il commence à l'indice `0`, et ensuite boucle jusqu'à ce qu'il atteigne l'indice
+Il commence à l'index `0`, et ensuite boucle jusqu'à ce qu'il atteigne l'index
 final du tableau (ce qui correspond au moment où la condition `index < 5` n'est
 plus vraie). Exécuter ce code va afficher chaque élément du tableau :
 
@@ -815,7 +815,7 @@ to fetch a sixth value from the array.
 -->
 
 Les cinq valeurs du tableau s'affichent toutes dans le terminal, comme attendu.
-Même si `indice` va atteindre la valeur `5` à un moment, la boucle arrêtera de
+Même si `index` va atteindre la valeur `5` à un moment, la boucle arrêtera de
 s'exécuter avant d'essayer de récupérer une sixième valeur du tableau.
 
 <!--
@@ -828,11 +828,11 @@ index is within the bounds of the array on every iteration through the loop.
 -->
 
 Cependant, cette approche pousse à l'erreur ; nous pourrions faire paniquer le
-programme si la valeur de l'indice est trop grand ou que la condition du test
+programme si la valeur de l'index est trop grand ou que la condition du test
 est incorrecte. Par exemple, si vous changez la définition du tableau `a` pour
 avoir quatre éléments, mais que nous oublions de modifier la condition dans
-`while indice < 4`, le code paniquera. De plus, c'est lent, car le compilateur
-ajoute du code pour effectuer à l'exécution la vérification que l'indice est
+`while index < 4`, le code paniquera. De plus, c'est lent, car le compilateur
+ajoute du code pour effectuer à l'exécution la vérification que l'index est
 compris dans les limites du tableau, et cela à chaque itération de la boucle.
 
 <!--

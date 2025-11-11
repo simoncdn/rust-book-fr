@@ -1,21 +1,21 @@
 fn main() {
-    let mut compteur = 0;
-    'increment: loop {
-        println!("compteur = {}", compteur);
-        let mut restant = 10;
+    let mut count = 0;
+    'counting_up: loop {
+        println!("compteur = {}", count);
+        let mut remaining = 10;
 
         loop {
-            println!("restant = {}", restant);
-            if restant == 9 {
+            println!("restant = {}", remaining);
+            if remaining == 9 {
                 break;
             }
-            if compteur == 2 {
-                break 'increment;
+            if count == 2 {
+                break 'counting_up;
             }
-            restant -= 1;
+            remaining -= 1;
         }
 
-        compteur += 1;
+        count += 1;
     }
-    println!("Fin du compteur = {}", compteur);
+    println!("Fin du compteur = {}", count);
 }

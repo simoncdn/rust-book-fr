@@ -1,10 +1,10 @@
 fn main() {
-    let mut nombre = 3;
+    let mut number = 3;
 
-    while nombre != 0 {
-        println!("{} !", nombre);
+    while number != 0 {
+        println!("{} !", number);
 
-        nombre -= 1;
+        number -= 1;
     }
 
     println!("DÉCOLLAGE !!!");
